@@ -1,30 +1,34 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+foods = {
+  apples: 23, 
+  grapes: 507, 
+  eggs: 48
+}
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
 # YOUR CODE HERE
-
+p foods.keys
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
-
+p foods.values
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
 # YOUR CODE HERE
-
+p foods[:grapes]
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
-
+foods[:bananas] = 99
+p foods[:bananas]
 
 #-------------------
 # Part 2: Email
@@ -36,18 +40,25 @@ p zoo
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-
+email = {
+  sender: "Loom",
+  email: "no-reply@loom.com",
+  subject: "Your video has been viewd:",
+  body: "title was watched for the first time!",
+  ending: "Loom, Inc. 85 2nd Street, Floor 1
+  San Francisco, CA 94105"
+}
 # Write code that prints your email hash to the terminal.
-
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
 # YOUR CODE HERE
-
+p email.keys
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
 # YOUR CODE HERE
-
+p email.values
 
 #-------------------
 # Part 3: Many Emails - CHALLENGE!
@@ -97,3 +108,30 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+  sender: "Loom",
+  email: "no-reply@loom.com",
+  subject: "Your video has been viewd:",
+  body: "title was watched for the first time!",
+  ending: "Loom, Inc. 85 2nd Street, Floor 1
+  San Francisco, CA 94105"
+},
+{
+  sender: "Airtable Automations",
+  email: "noreply+automations@airtableemail.com",
+  subject: "Mod 0 Submission",
+  body: "You submitted a Mod 0 assignment",
+  ending: "©2022 Airtable"
+},
+{
+  sender: "Pairin Support",
+  email: "support@pairin.com",
+  subject: "Thanks for taking the Pairin Survey",
+  body: "Hi Brian, blah blah blah blah",
+  ending: "Learn more about PAIRIN and behavioral science"
+},
+]
+
+p emails
